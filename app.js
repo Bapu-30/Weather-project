@@ -1,11 +1,8 @@
-// const { json } = require("express");
-const bodyParser = require("body-parser");
 const express = require("express");
 const https = require("https");
-const fetch = require("node-fetch");
-const { urlencoded } = require("body-parser");
+// const fetch = require("node-fetch");
 const app = express();
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: true }))
 
 app.get("/", (req, res) => {
 
